@@ -80,6 +80,8 @@ body {
 .movie-lists li .overview {
   font-size: 0.9em;
   color: #555;
+  overflow-y: auto;
+  height: 200px;
 }
 
 .movie-lists li .release-date {
