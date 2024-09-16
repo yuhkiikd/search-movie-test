@@ -3,6 +3,7 @@ import { useEffect, useState, useContext, useCallback } from 'react';
 import { discoverEndpoint, searchEndpoint } from '../lib/api_links';
 import { getMovieDetails } from '../lib/useMovieDetails';
 import { LanguageContext } from '../App';
+import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 
 export function MovieList() {
@@ -100,6 +101,10 @@ export function MovieList() {
         <div className='pagination'>
           <button onClick={prevPage} disabled={currentPage === 1}>前へ</button>
           <button onClick={nextPage} disabled={currentPage === Math.ceil(movies.length / moviesPerPage )}>次へ</button>
+        </div>
+
+        <div className='goto-top'>
+          <Link to="/">TOPへ戻る</Link>
         </div>
 
         {selectedMovie && movieDetails && (

@@ -21,7 +21,9 @@
 }
 
 .popularity-container__img-and-text img {
-  max-width: 300px;
+  max-width: 300px; /* 最大幅を設定 */
+  max-height: 450px; /* 最大高さを設定 */
+  object-fit: cover; /* アスペクト比を維持しつつ、画像をカバー */
 }
 
 .text-container {
@@ -39,6 +41,38 @@
 .text-container p span {
   font-weight: bold;
   font-size: 18px;
+}
+
+.goto-popularity, .goto-top {
+  display: inline-block;
+  background-color: #780000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom :20px;
+  width: 200px;
+}
+
+.goto-popularity a, .goto-top a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.goto-popularity:hover, .goto-top:hover {
+  background-color: #8e0808; /* ホバー時の背景色 */
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {

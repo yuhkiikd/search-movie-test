@@ -24,6 +24,11 @@ export function PopularityList() {
           );
         })}
       </ul>
+      <div className="footer-nav">
+        <div className='goto-top'>
+          <Link to="/">TOPへ戻る</Link>
+        </div>
+      </div>
     </div>
   )
 }

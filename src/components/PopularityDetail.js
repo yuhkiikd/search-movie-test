@@ -40,7 +40,14 @@ export function PopularityDetail() {
       ) : (
         <p><img src={loadingImg} alt="" /></p>
       )}
-      <Link to="/popularity">戻る</Link>
+      <div className="footer-nav">
+        <div className="goto-popularity">
+          <Link to="/popularity">人気の映画一覧へ戻る</Link>
+        </div>
+        <div className='goto-top'>
+          <Link to="/">TOPへ戻る</Link>
+        </div>
+      </div>
     </div>
   )
 }
