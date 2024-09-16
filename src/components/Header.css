@@ -1,0 +1,44 @@
+/* reset */
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+
+/* custom */
+.header {
+  background-color: #282c34;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+  max-height: 100%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu a:hover {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    column-gap: 10px;
+  }
+  .menu a {
+    font-size: 1rem;
+  }
+}
